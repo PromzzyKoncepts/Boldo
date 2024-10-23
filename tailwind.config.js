@@ -8,9 +8,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        background: "#0A2640",
         foreground: "var(--foreground)",
+        button: "#69E6A6"
       },
+      fontFamily: {
+        manrope: ['"manrope"', "sans-serif"],
+      },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 20s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }   
     },
   },
   plugins: [],
