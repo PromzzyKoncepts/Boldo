@@ -10,6 +10,7 @@ import Section4 from "./components/sections/Section4";
 import Section5 from "./components/sections/Section5";
 import Section6 from "./components/sections/Section6";
 import Section7 from "./components/sections/Section7";
+import Footer from "./components/Footer";
 
 export default function Home() {
 
@@ -44,7 +45,7 @@ export default function Home() {
       <section className="z-[90000] flex items-center ga flex-col justify-around  bg-background md:h-screen h-fit px-5 py-10 md:px-20">
         <Image
           src="/assets/svg/CircleRight.svg"
-          className="md:w-[40%] w-[50%] opacity-40 z-[10] absolute right-0 top-0 "
+          className="md:w-[40%] w-[50%] opacity-20 z-[10] absolute right-0 top-0 "
           alt="background right"
           width={100}
           height={100}
@@ -178,6 +179,7 @@ export default function Home() {
       <Section5 />
       <Section6 />
       <Section7 />
+      <Footer />
 
 
       {showScrollToTop && (
