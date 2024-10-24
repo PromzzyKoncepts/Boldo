@@ -14,7 +14,7 @@ const Section4 = () => {
         </h2>
         <div className="flex flex-col gap-5 items-">
           <div
-            data-aos="zoom-out"
+            data-aos=" "
             className="flex gap-5 shadow-md p-4 hover:bg-background hover:text-white items-center"
           >
             <BiLeaf />

@@ -5,7 +5,7 @@ export const testimonials = [
       image:"/assets/svg/albus.svg",
       fullName:"Albus DumbleDore",
       role:"Manager @Hogwarts",
-      aos: "zoom-out",
+      aos: "fade-up ",
   },
   {
     comment:
@@ -13,7 +13,7 @@ export const testimonials = [
       image:"/assets/svg/snape.svg",
       fullName:"Severus Snape",
       role:"Manager @Slytherin",
-      aos: "zoom-in-up",
+      aos: "fade-up ",
   },
   {
     comment:
@@ -21,7 +21,7 @@ export const testimonials = [
       image:"/assets/svg/harry.svg",
       fullName:"Harry Porter",
       role:"Team Leader @Gryffindor",
-      aos: "zoom-out",
+      aos: "fade-up ",
   },
   {
     comment:
@@ -29,7 +29,7 @@ export const testimonials = [
       image:"/assets/svg/albus.svg",
       fullName:"Albus DumbleDore",
       role:"Manager @Hogwarts",
-      aos: "zoom-out",
+      aos: "fade-up ",
   },
   {
     comment:
@@ -37,7 +37,7 @@ export const testimonials = [
       image:"/assets/svg/snape.svg",
       fullName:"Severus Snape",
       role:"Manager @Slytherin",
-      aos: "zoom-out",
+      aos: "fade-up ",
   },
   {
     comment:
@@ -45,7 +45,7 @@ export const testimonials = [
       image:"/assets/svg/harry.svg",
       fullName:"Harry Porter",
       role:"Team Leader @Gryffindor",
-      aos: "zoom-out",
+      aos: "fade-up ",
   },
   {
     comment:
@@ -53,7 +53,7 @@ export const testimonials = [
       image:"/assets/svg/albus.svg",
       fullName:"Albus DumbleDore",
       role:"Manager @Hogwarts",
-      aos: "zoom-out",
+      aos: "fade-up ",
   },
   {
     comment:
@@ -61,7 +61,7 @@ export const testimonials = [
       image:"/assets/svg/snape.svg",
       fullName:"Severus Snape",
       role:"Manager @Slytherin",
-      aos: "zoom-out",
+      aos: "fade-up ",
   },
   {
     comment:
@@ -69,7 +69,7 @@ export const testimonials = [
       image:"/assets/svg/harry.svg",
       fullName:"Harry Porter",
       role:"Team Leader @Gryffindor",
-      aos: "zoom-out",
+      aos: "fade-up ",
   },
 ];
 

@@ -30,7 +30,7 @@ const Section3 = () => {
           open.
         </h2>
         <div className="flex flex-col gap-3 items-start">
-          <div data-aos="zoom-out" className="flex gap-5 items-center">
+          <div data-aos=" " className="flex gap-5 items-center">
             <Image
               src="/assets/png/tick.png"
               className="w-8"
