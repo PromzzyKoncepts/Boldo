@@ -6,7 +6,6 @@ const Slider = () => {
   const logosRef = useRef(null);
 
   useEffect(() => {
-    // Duplicate the logos for infinite scroll
     const logos = logosRef.current;
     const clonedLogos = logos.cloneNode(true);
     clonedLogos.setAttribute('aria-hidden', 'true');
@@ -14,7 +13,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+    <div className="w-full mt-10 md:mt-0 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
       <ul ref={logosRef} className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
         <li>
           <Image src="/assets/svg/Logo.svg" alt="Logo 1" width={100} height={100} />

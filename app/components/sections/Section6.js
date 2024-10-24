@@ -3,7 +3,7 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 const Section6 = () => {
   return (
-    <section className="md:px-36 px-5 py-20 bg-white text-black">
+    <section className="md:px-36 px-5 py-10 md:py-20 bg-white text-black">
       <div data-aos="zoom-in">
         <Image
           src="/assets/svg/section5.svg"
@@ -13,8 +13,8 @@ const Section6 = () => {
           alt="section image"
         />
       </div>
-      <div className="flex items-center justify-between gap-10 my-10">
-        <h2  data-aos="zoom-out" className="text-4xl w-1/2 ">
+      <div className="flex md:flex-row flex-col items-center justify-between gap-10 my-10">
+        <h2  data-aos="zoom-out" className="text-2xl md:text-4xl md:w-1/2 ">
           We connect our customers with the best, and help them keep up-and stay
           open.
         </h2>

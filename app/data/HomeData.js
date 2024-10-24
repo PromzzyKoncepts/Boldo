@@ -72,3 +72,79 @@ export const testimonials = [
       aos: "zoom-out",
   },
 ];
+
+export const blog = [ 
+    {
+        image: "/assets/svg/Image1.svg",
+        title: "Category",
+        date: "November 22, 2021",
+        userSrc:  "/assets/svg/blog1.svg",
+        user: "Chandler Bing",
+        content: "Pitch termsheet backing validation focus release."
+    },
+    {
+        image: "/assets/svg/Image2.svg",
+        title: "Category",
+        date: "November 22, 2021",
+        userSrc:  "/assets/svg/blog2.svg",
+        user: "Rachael Green",
+        content: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar."
+    },
+    {
+        image: "/assets/svg/Image3.svg",
+        title: "Category",
+        date: "November 22, 2021",
+        userSrc:  "/assets/svg/blog3.svg",
+        user: "Monica Geller",
+        content: "Beta prototype sales iPad gen-z marketing network effects value proposition"
+    },
+    {
+        image: "/assets/svg/Image1.svg",
+        title: "Category",
+        date: "November 22, 2021",
+        userSrc:  "/assets/svg/blog1.svg",
+        user: "Chandler Bing",
+        content: "Pitch termsheet backing validation focus release."
+    },
+    {
+        image: "/assets/svg/Image2.svg",
+        title: "Category",
+        date: "November 22, 2021",
+        userSrc:  "/assets/svg/blog2.svg",
+        user: "Rachael Green",
+        content: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar."
+    },
+    {
+        image: "/assets/svg/Image3.svg",
+        title: "Category",
+        date: "November 22, 2021",
+        userSrc:  "/assets/svg/blog3.svg",
+        user: "Monica Geller",
+        content: "Beta prototype sales iPad gen-z marketing network effects value proposition"
+    },
+    {
+        image: "/assets/svg/Image1.svg",
+        title: "Category",
+        date: "November 22, 2021",
+        userSrc:  "/assets/svg/blog1.svg",
+        user: "Chandler Bing",
+        content: "Pitch termsheet backing validation focus release."
+    },
+    
+    {
+        image: "/assets/svg/Image3.svg",
+        title: "Category",
+        date: "November 22, 2021",
+        userSrc:  "/assets/svg/blog3.svg",
+        user: "Monica Geller",
+        content: "Beta prototype sales iPad gen-z marketing network effects value proposition"
+    },
+    {
+        image: "/assets/svg/Image2.svg",
+        title: "Category",
+        date: "November 22, 2021",
+        userSrc:  "/assets/svg/blog2.svg",
+        user: "Rachael Green",
+        content: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar."
+    },
+]

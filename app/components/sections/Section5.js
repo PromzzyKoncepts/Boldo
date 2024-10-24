@@ -21,11 +21,11 @@ const Section5 = () => {
 
   return (
     <div className="md:px-20 px-5 py-10 md:py-20 bg-background">
-      <div className="flex items-end justify-between">
-        <h2 className="text-5xl px-16 text-white">
+      <div className="flex  flex-col md:flex-row md:items-end items-center justify-between">
+        <h2 className="md:text-5xl text-2xl px-5 md:px-16 text-white">
           An enterprise template to ramp <br /> up your company website
         </h2>
-        <div className="flex gap-4 items-center">
+        <div className="md:flex hidden top-24 gap-4 items-center">
           <button
             onClick={handlePrevious}
             className={`p-3 hover:bg-slate-200 text-background bg-white rounded-full shadow-md ${
@@ -47,7 +47,7 @@ const Section5 = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 items-start place-items-center mx-16 gap-16 mt-16 mb-10">
+      <div className="flex flex-col  md:grid grid-cols-3 items-start place-items-center md:mx-16  gap-16 mt-16 mb-10">
         {testimonials.slice(currentIndex, currentIndex + 3).map((item, index) => (
           <div data-aos={item.aos} key={index} className="bg-white py-8 px-10 text-black rounded-2xl flex flex-col gap-10">
             <q className="font-medium text-xl">{item.comment}</q>
@@ -67,6 +67,27 @@ const Section5 = () => {
           </div>
         ))}
       </div>
+
+			<div className="flex md:hidden justify-center gap-4 items-center">
+          <button
+            onClick={handlePrevious}
+            className={`p-3 hover:bg-slate-200 text-background bg-white rounded-full shadow-md ${
+              currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            disabled={currentIndex === 0}
+          >
+            <FaArrowLeft />
+          </button>
+          <button
+            onClick={handleNext}
+            className={`p-3 hover:bg-slate-200 text-background bg-white rounded-full shadow-md ${
+              currentIndex === testimonials.length - 3 ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            disabled={currentIndex === testimonials.length - 3}
+          >
+            <FaArrowRight />
+          </button>
+        </div>
     </div>
   );
 };

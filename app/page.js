@@ -1,8 +1,10 @@
+'use client'
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Header from "./components/Header";
 import Link from "next/link";
 import Slider from "./components/Slider";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowUp, FaArrowRight } from "react-icons/fa";
 import Section3 from "./components/sections/Section3";
 import Section4 from "./components/sections/Section4";
 import Section5 from "./components/sections/Section5";
@@ -10,21 +12,47 @@ import Section6 from "./components/sections/Section6";
 import Section7 from "./components/sections/Section7";
 
 export default function Home() {
+
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", 
+    });
+  };
+
   return (
     <div className="relative">
       <Header />
-      <section className="z-[9000000] flex items-center ga flex-col justify-around  bg-background h-screen md:px-20">
+      <section className="z-[90000] flex items-center ga flex-col justify-around  bg-background md:h-screen h-fit px-5 py-10 md:px-20">
         <Image
           src="/assets/svg/CircleRight.svg"
-          className="w-[40%] opacity-40 z-[10] absolute right-0 top-0 "
+          className="md:w-[40%] w-[50%] opacity-40 z-[10] absolute right-0 top-0 "
           alt="background right"
           width={100}
           height={100}
         />
 
-        <div className=" grid grid-cols-2 gap-16 items-center">
+        <div className="flex flex-col md:grid grid-cols-2 md:pt-0 pt-16 gap-10 md:gap-16 items-center">
           <div className="flex flex-col gap-5 ">
-            <h1 className="text-5xl">
+            <h1 className="text-3xl md:text-5xl">
               Save time by building fast with Boldo Template{" "}
             </h1>
             <p>
@@ -57,7 +85,7 @@ export default function Home() {
                 height={1000}
               />
             </div>
-            <div className="bg-[#3B5166] w-[82%] p-4 rounded-xl">
+            <div className="bg-[#3B5166]  w-[80%] p-4 rounded-xl">
               <Image
                 src="/assets/svg/item2.svg"
                 className=""
@@ -80,17 +108,17 @@ export default function Home() {
         <Slider />
       </section>
 
-      <section className="text-black bg-white md:px-20 py-20">
+      <section className="text-black bg-white md:px-20 py-10 md:py-20">
         <p data-aos="fade-up" className="text-center text-sm ">
           Our Services
         </p>
         <h2
           data-aos="fade-up"
-          className="text-center font-medium text-5xl w-2/3 py-5 mx-auto"
+          className="text-center font-medium text-2xl md:text-5xl w-2/3 py-5 mx-auto"
         >
           Handshake infographic mass market crowdfunding iteration.
         </h2>
-        <div className="md:grid grid-cols-3 gap-24 place-content-between p-10">
+        <div className=" flex flex-col gap-8 md:grid grid-cols-3 md:gap-24 place-content-between px-10 md:p-10">
           <div data-aos="fade-up" className="flex gap-3 items-start flex-col">
             <Image
               src="/assets/svg/cool1.svg"
@@ -150,6 +178,16 @@ export default function Home() {
       <Section5 />
       <Section6 />
       <Section7 />
+
+
+      {showScrollToTop && (
+        <button
+          onClick={scrollToTop}
+          className="hidden md:block fixed bottom-10 border md:right-10 right-0  p-4 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition-all duration-300"
+        >
+          <FaArrowUp size={22} />
+        </button>
+      )}
     </div>
   );
 }

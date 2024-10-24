@@ -1,7 +1,8 @@
-'use client'
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import { IoIosMenu } from "react-icons/io";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +26,9 @@ const Header = () => {
   return (
     <div
       className={`fixed z-[100] top-0 w-full px-5 md:px-20 py-5 transition-all duration-300 ${
-        scrolled ? "backdrop-filter backdrop-blur-lg text-background font-bold  shadow-lg" : "bg-transparent"
+        scrolled
+          ? "backdrop-filter backdrop-blur-lg text-background font-bold  shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <header className="flex items-center justify-between">
@@ -39,7 +42,9 @@ const Header = () => {
           />
           Boldo
         </div>
-        <div className="flex gap-10 items-center">
+        <div className="md:hidden block "><IoIosMenu size={24}/></div>
+
+        <div className="hidden md:flex gap-10 items-center">
           <Link href="/product">Product</Link>
           <Link href="/services">Services</Link>
           <Link href="/about">About</Link>
@@ -50,9 +55,10 @@ const Header = () => {
             Log in
           </Link>
         </div>
+        
       </header>
     </div>
-  );
+  ); 
 };
 
 export default Header;
