@@ -31,7 +31,7 @@ const Section7 = () => {
           <div
             key={index}
             
-            className="flex gap-3 md:items-start items-center flex-col"
+            className="flex gap-3 md:items-start items-cente flex-col"
           >
             <div>
               <Image
@@ -45,7 +45,7 @@ const Section7 = () => {
             <h4 className="font-semibold">
               {item.title} <small className="font-light">{item.date}</small>
             </h4>
-            <p className="w-2/3">{item.content}</p>
+            <p className="w-[90%] md:w-2/3">{item.content}</p>
             <div className="flex items-center gap-4">
               <Image
                 src={item.userSrc}
