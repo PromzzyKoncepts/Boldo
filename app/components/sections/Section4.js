@@ -38,7 +38,7 @@ const Section4 = () => {
         </div>
       </div>
       <div className="relative">
-        <div data-aos="fade-left" >
+        <div data-aos="fade-down" >
           <Image
             src="/assets/svg/person2.svg"
             className="w-2/3 mx-auto"
@@ -47,7 +47,7 @@ const Section4 = () => {
             height={300}
           />
         </div>
-        <div data-aos="fade-up" >
+        <div>
           <Image
             src="/assets/svg/chart2.svg"
             className="absolute right-[40%] -bottom-[20%]"

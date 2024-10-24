@@ -13,7 +13,7 @@ const Section3 = () => {
             width={300}
             height={300}
           /></div>
-          <div data-aos="fade-up" ><Image
+          <div ><Image
             src="/assets/svg/chart.svg"
             className="absolute right-[20%] -bottom-[20%]"
             alt="background right"
