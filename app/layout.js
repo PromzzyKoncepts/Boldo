@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { AOSInit } from "./utils/AosConfig";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       <body
         className={`!font-manrope ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <AOSInit />
         {children}
       </body>
     </html>
