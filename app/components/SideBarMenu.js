@@ -15,7 +15,7 @@ const SidebarMenu = ({ setMenuOpen }) => {
     setTimeout(() => {
       setMenuOpen(false);
       setIsClosing(false);
-    }, 500); // Match the duration of the slide-out animation
+    }, 500);
   };
 
   return (

@@ -7,9 +7,9 @@ const Section6 = () => {
 
   const toggleDropdown = (dropdownIndex) => {
     if (openDropdown === dropdownIndex) {
-      setOpenDropdown(null); // Close the dropdown if it's already open
+      setOpenDropdown(null); 
     } else {
-      setOpenDropdown(dropdownIndex); // Open the clicked dropdown
+      setOpenDropdown(dropdownIndex); 
     }
   };
 
@@ -32,7 +32,6 @@ const Section6 = () => {
         <div className="flex flex-col gap-5 ">
           <div
             onClick={() => toggleDropdown(1)}
-            data-aos="fade-right"
             className="hover:text-background font-medium cursor-pointer border-b py-2 hover:border-background flex items-center justify-between  gap-5"
           >
             <span>We connect our customers with the best?</span>
@@ -57,7 +56,6 @@ const Section6 = () => {
 
           <div
             onClick={() => toggleDropdown(2)}
-            data-aos="fade-up"
             className="hover:text-background font-medium cursor-pointer border-b py-2 hover:border-background flex items-center justify-between md:gap-5"
           >
             <span>How do we ensure quality service?</span>
